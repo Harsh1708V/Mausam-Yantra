@@ -3,6 +3,7 @@ import './App.css'
 import search from './assets/icons/search.svg'
 import { useStateContext } from './Context'
 import { BackgroundLayout, WeatherCard, MiniCard } from './Components'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           iconString={weather.conditions}
           conditions={weather.conditions}
         />
+        <SpeedInsights />
 
         <div className='flex justify-center gap-8 flex-wrap w-[60%]'>
           {
